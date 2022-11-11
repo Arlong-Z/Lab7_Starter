@@ -49,7 +49,7 @@ function initializeServiceWorker() {
       console.log('support');
       window.addEventListener('load', async function(){
         try{
-          await navigator.serviceWorker.register('/sw.js', {
+          await navigator.serviceWorker.register('./sw.js', {
             scope: "/",
           })
           console.log("Service worker registration succeeded");
