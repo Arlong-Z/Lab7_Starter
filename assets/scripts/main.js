@@ -50,7 +50,7 @@ function initializeServiceWorker() {
       window.addEventListener('load', async function(){
         try{
           await navigator.serviceWorker.register('./sw.js', {
-            scope: "/",
+            scope: "./",
           })
           console.log("Service worker registration succeeded");
         } catch(err) {
